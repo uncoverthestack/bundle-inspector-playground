@@ -1,0 +1,10 @@
+bundle:
+  name: playground_secret_scope_key
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

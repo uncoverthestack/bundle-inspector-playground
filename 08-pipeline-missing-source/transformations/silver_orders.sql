@@ -1,0 +1,1 @@
+CREATE OR REFRESH MATERIALIZED VIEW silver_orders AS SELECT * FROM bronze_orders;

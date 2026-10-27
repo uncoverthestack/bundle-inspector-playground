@@ -1,0 +1,10 @@
+resources:
+  jobs:
+    orders:
+      name: orders
+      tasks:
+        - task_key: clean
+          notebook_task:
+            notebook_path: ../src/clean_orders.py
+            base_parameters:
+              schema_name: sales

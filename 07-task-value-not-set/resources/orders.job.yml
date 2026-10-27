@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    orders:
+      name: orders
+      tasks:
+        - task_key: ingest
+          notebook_task:
+            notebook_path: ../src/ingest.py
+        - task_key: publish
+          depends_on:
+            - task_key: ingest
+          notebook_task:
+            notebook_path: ../src/publish.py

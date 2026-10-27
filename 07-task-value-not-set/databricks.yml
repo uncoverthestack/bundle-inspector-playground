@@ -1,0 +1,10 @@
+bundle:
+  name: playground_task_value_not_set
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

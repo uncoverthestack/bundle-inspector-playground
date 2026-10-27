@@ -1,0 +1,11 @@
+resources:
+  jobs:
+    orders:
+      name: orders
+      tasks:
+        - task_key: load
+          notebook_task:
+            notebook_path: ../src/load_orders.py
+        - task_key: load
+          notebook_task:
+            notebook_path: ../src/load_customers.py

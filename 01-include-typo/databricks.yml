@@ -1,0 +1,11 @@
+bundle:
+  name: playground_include_typo
+
+include:
+  - resources/*.yml
+  - resource/reports/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

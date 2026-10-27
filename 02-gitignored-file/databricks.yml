@@ -1,0 +1,10 @@
+bundle:
+  name: playground_gitignored_file
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

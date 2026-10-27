@@ -1,0 +1,10 @@
+{
+  "name": "Bundle Inspector Playground",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sudo sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["UncoverTheStack.databricks-bundle-inspector"]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+bundle:
+  name: playground_pipeline_missing_source
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

@@ -1,0 +1,10 @@
+bundle:
+  name: playground_unknown_dependency
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

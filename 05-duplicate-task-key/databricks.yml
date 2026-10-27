@@ -1,0 +1,10 @@
+bundle:
+  name: playground_duplicate_task_key
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

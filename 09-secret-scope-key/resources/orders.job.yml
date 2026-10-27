@@ -1,0 +1,8 @@
+resources:
+  jobs:
+    orders:
+      name: orders
+      tasks:
+        - task_key: fetch
+          notebook_task:
+            notebook_path: ../src/fetch.py

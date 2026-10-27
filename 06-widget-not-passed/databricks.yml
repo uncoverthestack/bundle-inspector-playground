@@ -1,0 +1,10 @@
+bundle:
+  name: playground_widget_not_passed
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true

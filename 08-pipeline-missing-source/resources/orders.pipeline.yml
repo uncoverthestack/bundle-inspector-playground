@@ -1,0 +1,10 @@
+resources:
+  pipelines:
+    orders_pipeline:
+      name: orders_pipeline
+      serverless: true
+      catalog: main
+      schema: playground
+      libraries:
+        - glob:
+            include: ../transformation/**

@@ -1,0 +1,27 @@
+name: The inspector missed something
+description: You broke a bundle and the inspector said nothing, or it warned about something that works.
+labels: ["missed-catch"]
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: What did you change?
+      description: The edit you made, and which folder or file.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what happened?
+      description: For example "deploy failed with ..." or "no warning appeared".
+    validations:
+      required: true
+  - type: input
+    id: cli
+    attributes:
+      label: Databricks CLI version
+      description: Output of `databricks --version`.
+  - type: input
+    id: extension
+    attributes:
+      label: Bundle Inspector version

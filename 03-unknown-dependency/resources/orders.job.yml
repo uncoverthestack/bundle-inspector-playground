@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    orders:
+      name: orders
+      tasks:
+        - task_key: load
+          notebook_task:
+            notebook_path: ../src/load.py
+        - task_key: report
+          depends_on:
+            - task_key: laod
+          notebook_task:
+            notebook_path: ../src/report.py
